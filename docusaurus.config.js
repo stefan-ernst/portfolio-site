@@ -1,13 +1,13 @@
 module.exports = {
-    title: 'Story Mapping for Jira',
-    tagline: 'Focus on user value & prioritize the right work',
-    url: 'https://storymapping.app',
+    title: 'Personas for Jira',
+    tagline: 'Focus on your customers and their goals - combine UX personas with Jira Issues',
+    url: 'https://www.betterpersonas.app',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/FreeIcon.svg',
+    favicon: 'img/PersonaAppIcon.svg',
     organizationName: 'Realigned Technologies Ltd', // Usually your GitHub org/user name.
-    projectName: 'storymapping', // Usually your repo name.
+    projectName: 'personas', // Usually your repo name.
     themeConfig: {
         colorMode: {
             defaultMode: 'light',
@@ -15,10 +15,10 @@ module.exports = {
         },
         navbar: {
             style: 'dark',
-            title: 'Story Mapping for Jira',
+            title: 'Personas for Jira',
             logo: {
-                alt: 'Story Mapping for Jira Logo',
-                src: 'img/StoryMapIcon.svg',
+                alt: 'Personas for Jira Logo',
+                src: 'img/PersonaIconBare.svg',
             },
             items: [
                 {
@@ -131,7 +131,7 @@ module.exports = {
         {
             /** <script async defer data-domain="storymapping.app" src="https://plausible.io/js/plausible.js"></script> **/
             src: "https://plausible.io/js/plausible.js",
-            "data-domain": "storymapping.app",
+            "data-domain": "betterpersonas.app",
             async: true,
             defer: true
         }
