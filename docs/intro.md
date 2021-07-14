@@ -4,8 +4,9 @@ title: Introduction
 slug: /
 ---
 
-User story mapping is a visual exercise that helps development teams
-define the work that will create the best user experience. It is used
-to improve teams’ understanding of their customers and to prioritize work. 
+Personas for Jira helps you in understanding your customers and their needs better. By combining
+your user research data with the user requirements in Jira, you can build products and services
+more holistically - use the app to develop persona profiles and communicate with stakeholders
+and the development team.
 
-We built story mapping app to make it easier for teams to do story mapping in Jira.
+Learn more about persona focus design and how to use Personas for Jira app.

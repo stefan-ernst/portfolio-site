@@ -3,28 +3,36 @@ id: setup
 title: First steps
 ---
 
-import SelectBoard from '/static/img/smfree/selectboard.png'
-import SelectBoard2 from '/static/img/smfree/selectboard2.png'
+import Screenshot1 from '../static/img/Screenshot1.png'
+import Screenshot2 from '../static/img/Screenshot2.png'
+import Screenshot3 from '../static/img/Screenshot3.png'
 
 
-After installation, Story Mapping app will be available in 
-all Software projects (Business projects are supported in the Pro version).
+After installation, Personas for Jira app will be available in 
+all Jira projects (all Project types are supported).
 
-When you first open the story map, you can start adding
-Epics and assigning tickets right away. 
-It is a good idea to set up the backlog from the start 
-by selecting a board in top right-hand corner.
+When you open the app, you will be prompted to create your first
+persona profile. Specify a persona name and a brief description (optional)
+and select either a photo from the Unsplash library or a solid color
+to represent the Persona. This photo or color will also be visible
+in issues linked to this Persona.
 
-<img src={SelectBoard} style={{width:'20rem'}} />
+<img src={Screenshot1} alt="Adding a Persona to Jira" />
 
-By selecting a board that includes more than one project in the board
-filter, you can use issues from multiple projects in your story map.
+Once you have created the Persona, you can edit the basic fields
+provided by the app which are currently "Motivation", "Goals" and "Blockers".
 
-<img src={SelectBoard2} style={{width:'20rem',marginBottom:'2rem'}} />
+You can add any field you need via the Overview page - Click "Fields" 
+in the top right hand corner and add either a global field or a field scoped
+to the current project.
 
-Keep in mind however that release information works on a per-project
-basis, so release mapping will not work when more than one project is used
-in the filter.
+After doing so, you can click on the persona in order to edit the 
+newly available fields and complete the Persona profile.
 
-Once the board is set up, you are good to go. 
-Head on to the next section.
+<img src={Screenshot2} alt="Editing fields for Personas"/>
+
+In order to add issues to this Persona, open the profile and
+click "Issues". You can then search for issues by name or issue key and
+add them to the list.
+
+<img src={Screenshot3} alt="Managing issues"/>

@@ -96,7 +96,7 @@ function Home() {
                 <div className="container" style={{transform: 'skewY(+2deg)',paddingTop:'2rem'}}>
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
-                    <img src="/img/SME1.webp" style={{width: '40rem'}} alt="Story Mapping Hero Image"/>
+                    <img src="/img/Musician.png" style={{width: '40rem'}} alt="Personas for Jira Hero Image"/>
 
                     <br/>
                     <div style={{margin: 5}}>Available on the</div>
@@ -126,16 +126,18 @@ function Home() {
             <main className='frontpage'>
                 {showImage && <ModalImage onClose={() => setShowImage(undefined)} src={showImage} />}
 
-                <div style={{margin:'auto',maxWidth:300,textAlign:'center'}}><h2>Free Features</h2>
+                <div style={{margin:'auto',maxWidth:300,textAlign:'center'}}><h2>Features</h2>
                 <br /></div>
 
 
                 <div className='heroBox'>
                     <div className='heroBox-text'>
-                        <h2>Manage & Prioritize</h2>
-                        Story Mapping for Jira was designed from the ground up to be easily installed and used to get your team up and running quickly
+                        <h2>Fully integrated</h2>
+                        Enrich Jira issues with Persona profiles. Give your team and stakeholders added context
+                        for requirements. Understand your customers better.
+
                     </div>
-                    <img src="/img/Basic.png" style={{width:493,height:'auto',maxHeight:378}} />
+                    <img src="/img/Persona1.png" style={{width:466,height:'auto',maxHeight:270}} />
 
                 </div>
 
@@ -146,12 +148,12 @@ function Home() {
                     <div className='heroBox-text'>
                         <h2>Edit on the fly</h2>
                         <ul>
-                            <li>Easily assign issues to epics with drag & drop
+                            <li>Edit your Personas quickly with just a few clicks
                             </li>
-                            <li>Manage and plan your next sprint or release right from the story map.</li>
+                            <li>Assign issues centrally, manage all your customer requirements in one place</li>
                         </ul>
                     </div>
-                    <img src="/img/Basic2.png" style={{width:493,height:'auto',maxHeight:378}} />
+                    <img src="/img/PersonaFrame.png" style={{width:494,height:'auto',maxHeight:375}} />
 
 
 
@@ -162,127 +164,21 @@ function Home() {
                 <div className='heroBox'>
 
                     <div className='heroBox-text'>
-                        <h2>Fully integrated</h2>
+                        <h2>Fits your needs</h2>
                         <ul>
-                            <li>Create Jira issues directly from the story map</li>
-                            <li>Add releases, create and start sprints - all without leaving the app</li>
+                            <li>Make persona management work for you</li>
+                            <li>Create custom fields to capture anything you want</li>
+                            <li>Define fields per project or globally - if you need them anywhere in Jira</li>
                         </ul>
 
                     </div>
-                    <img src="/img/AddRelease.png" style={{width:290,height:'auto',maxHeight:306}} />
+                    <img src="/img/Fields.png" style={{width:493,height:'auto',maxHeight:458}} />
 
                 </div>
 
                 <br />
                 <br />
-                <div style={{margin:'auto',maxWidth:300,textAlign:'center'}}><h2>Screenshots</h2></div>
 
-
-
-                {features && features.length > 0 && (
-                    <section className={styles.features}>
-                        <div className="container">
-                            <div className="row">
-                                {features.map((props, idx) => (
-                                    <Feature setShowImage={setShowImage} key={idx} {...props} />
-                                ))}
-                            </div>
-                        </div>
-                    </section>
-                )}
-                <br />
-
-                <div style={{  backgroundColor: '#fff', padding: "5rem 0 5rem 0", transform: 'skewY(+2deg)', marginBottom: -100}}>
-                    <div style={{transform: 'skewY(-2deg)'}}>
-                    <div style={{margin:'auto',maxWidth:300,textAlign:'center'}}><h2>Get even more with Pro</h2>
-                    <br /></div>
-
-                    <div className='heroBox'>
-
-                        <div className='heroBox-text'>
-                            <h2>Custom Issue Types</h2>
-                            <ul>
-                                <li>Use any issue type for your story map</li>
-                                <li>Link issues with custom issue link types</li>
-                                <li>Build story maps in Jira Business projects</li>
-                            </ul>
-                        </div>
-                        <img src="/img/CustomIssues.png" style={{maxWidth:493,height:'auto',maxHeight:454}} />
-
-                    </div>
-                        <br />
-
-                    <div className='heroBox'>
-
-                        <div className='heroBox-text'>
-                            <h2>Custom Fields</h2>
-                            <ul>
-                                <li>Customize your issue cards the way you want it</li>
-                                <li>Display useful additional information in the story map</li>
-                            </ul>
-
-                        </div>
-                        <img src="/img/CustomFields2.png" style={{width:493,height:'auto',maxHeight:378}} />
-
-                    </div>
-
-                    <br />
-
-                    <div className='heroBox'>
-
-                        <div className='heroBox-text'>
-                            <h2>Custom Timeframes</h2>
-                            <ul>
-                                <li>Sometimes releases and sprints are just not enough for planning</li>
-                                <li>Add custom timeframes to plan more long term</li>
-                                <li>Switch to planning mode to view issues on a time axis</li>
-                            </ul>
-
-                        </div>
-                        <img src="/img/Timeframes.png" style={{width:490,height:'auto',maxHeight:302}} />
-
-                    </div>
-
-
-                        <br />
-                        <br />
-                        <div style={{margin:'auto',maxWidth:300,textAlign:'center'}}><h2>Screenshots</h2></div>
-
-
-                        {proFeatures && proFeatures.length > 0 && (
-                        <section className={styles.features}>
-                            <div className="container">
-                                <div className="row">
-                                    {proFeatures.map((props, idx) => (
-                                        <Feature setShowImage={setShowImage} key={idx} {...props} />
-                                    ))}
-                                </div>
-                            </div>
-                        </section>
-                    )}
-
-                        <div className={styles.buttons}>
-                            <Link
-                                className={clsx(
-                                    'button button--outline button--lg button-light',
-                                    styles.getStarted,
-                                )}
-                                to={useBaseUrl('docs/')}>
-                                Documentation
-                            </Link> &nbsp;
-                            <Link
-                                className={clsx(
-                                    'button button--outline button--lg button--primary shadow-lg',
-                                    styles.getStarted,
-                                )}
-                                to={"https://marketplace.atlassian.com/1224417"}>
-                                Try free
-                            </Link>
-                        </div>
-
-                    </div>
-
-                </div>
 
             </main>
         </Layout>

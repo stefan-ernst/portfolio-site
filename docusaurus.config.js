@@ -27,16 +27,9 @@ module.exports = {
                     label: 'Documentation',
                     position: 'left',
                 },
-                {to: 'blog', label: 'Blog', position: 'left'},
-                {
-                    to: 'https://marketplace.atlassian.com/1224357',
-                    label: 'Download free',
-                    position: 'left',
-                    target: '_blank'
-                },
                 {
                     to: 'https://marketplace.atlassian.com/1224417',
-                    label: 'Try Pro!',
+                    label: 'Try Free',
                     position: 'left',
                     target: '_blank'
                 },
@@ -48,6 +41,10 @@ module.exports = {
                 {
                     title: 'Other Apps',
                     items: [
+                        {
+                            label: 'Story Mapping for Jira',
+                            to: 'https://storymapping.app',
+                        },
                         {
                             label: 'Journey Mapping for Jira',
                             to: 'https://journeymapping.app',

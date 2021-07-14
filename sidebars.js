@@ -1,11 +1,7 @@
 module.exports = {
   someSidebar: [
     'intro',
-    /*'freevspaid',*/
-    'storyvsjourneymap',
-    {"Story Mapping": ['setup', 'usage', 'usage2', 'pro-features', 'freetopro', 'roadmap']},
+    {"Persona Management": ['setup']},
 
-    /* {"Story Mapping Pro": ['doc1', 'doc2', 'doc3']},*/
-    {Support: ['troubleshooting','privacy']},
   ],
 };
