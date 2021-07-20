@@ -6,7 +6,7 @@ title: Bias free personas
 ### Build better free persona profiles
 
 When we write persona profiles based on personal opinion and experiences, we tend to include
-a lot of the persona's biography, which might diminish the value of the persona.
+a lot of the persona's biography, which can diminish the value of the persona.
 
 Bentley University has written a brilliant article why this is a problem [here](https://www.bentley.edu/centers/user-experience-center/beware-persona-bias).
 
