@@ -3,7 +3,7 @@ id: bias-free
 title: Bias free personas
 ---
 
-### Build bias free persona profiles
+### Build better free persona profiles
 
 When we write persona profiles based on personal opinion and experiences, we tend to include
 a lot of the persona's biography, which might diminish the value of the persona.
