@@ -1,6 +1,6 @@
 ---
 id: bias-free
-title: Using Story Mapping app
+title: Bias free personas
 ---
 
 ### Build bias free persona profiles

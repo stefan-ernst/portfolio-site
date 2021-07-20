@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: [
     'intro',
-    {"Persona Management": ['setup']},
+    {"Persona Management": ['setup']},'bias-free'
 
   ],
 };
