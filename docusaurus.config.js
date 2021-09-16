@@ -28,7 +28,7 @@ module.exports = {
                     position: 'left',
                 },
                 {
-                    to: 'https://marketplace.atlassian.com/1224417',
+                    to: 'https://marketplace.atlassian.com/1225680',
                     label: 'Try Free',
                     position: 'left',
                     target: '_blank'
