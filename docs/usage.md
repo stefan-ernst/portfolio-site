@@ -1,32 +1,44 @@
 ---
 id: usage
-title: Using Story Mapping app
+title: Using the Portfolio Map
 ---
+import AddIssue from '../static/img/addIssue.png'
+
 
 ### Basics
 
-After adding the story map, you can add an existing epic via search function 
-or create a new epic.
+You can add multiple portfolio maps for a Jira project. 
+This way you can control multiple company wide portfolio maps from a single Jira project.
 
-![First Epic](/img/smfree/smetutorial1.png)
+After opening the app, click "Add Portfolio Map" to create a new portfolio.
 
-You can assign issues to the epic the same way, either search for them or create new ones.
+You will be prompted to give the portfolio map a name. Additionally, you need to 
+choose the column issue type (the activity row in a classic story map - we will refer to
+this issue type as "portfolio epic" in this article)  from the list
+of available issue types in the current project. You can also select a Jira Agile board.
+This board functions as a backlog for the portfolio, where you can later drag and drop
+issues from into the map.
 
-#### Creating an issue
+You can import all issues of the chosen issue type either from the project - or, if you
+selected an agile board, from the board itself.
+ 
+#### Adding an issue
 
-![Creating a task](/img/smfree/smetutorial2.png)
+You can add issues three ways: Either by clicking "Create" or "Search" within a column
+or by clicking the backlog symbol and dragging them into the portfolio map.
 
-#### Result
+<img src={AddIssue} />
 
-![The newly created task](/img/smfree/smetutorial3.png)
+By adding an issue into a column, a property will be set on the issue 
+that references the current portfolio map as well as which issue it is assigned to.
 
-:::info
-You can not assign epics to epics, this is not allowed by Jira
-:::
+For this reason, having the same issue in different portfolios is discouraged, as there would
+be side-effects with assigning the same issue multiple times.
+
 
 ### Working with multiple epics
 
-You can add additional epics to the story map at any point. The epics can be marked
+You can add additional portfolio epics to the portfolio map at any point. The epics can be marked
 with custom colors. These colors do not correspond to the epic colors of Jira (the selection
  is too limited), so you can select any color you want here.
 

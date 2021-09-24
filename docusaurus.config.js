@@ -1,11 +1,11 @@
 module.exports = {
-    title: 'Personas for Jira',
+    title: 'Portfolio Map for Jira',
     tagline: 'Focus on your customers and their goals - combine UX personas with Jira Issues',
     url: 'https://www.betterpersonas.app',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/PersonaAppIcon.svg',
+    favicon: 'img/fav_32x32.png',
     organizationName: 'Realigned Technologies Ltd', // Usually your GitHub org/user name.
     projectName: 'personas', // Usually your repo name.
     themeConfig: {
@@ -14,11 +14,11 @@ module.exports = {
             disableSwitch: true
         },
         navbar: {
-            style: 'dark',
-            title: 'Personas for Jira',
+            style: 'primary',
+            title: 'Portfolio Map for Jira',
             logo: {
-                alt: 'Personas for Jira Logo',
-                src: 'img/PersonaIconBare.svg',
+                alt: 'Portfolio Map for Jira Logo',
+                src: 'img/denkplan.png',
             },
             items: [
                 {
@@ -28,7 +28,7 @@ module.exports = {
                     position: 'left',
                 },
                 {
-                    to: 'https://marketplace.atlassian.com/1225680',
+                    to: 'https://marketplace.atlassian.com/1226527',
                     label: 'Try Free',
                     position: 'left',
                     target: '_blank'
@@ -36,7 +36,7 @@ module.exports = {
             ],
         },
         footer: {
-            style: 'dark',
+            style: 'light',
             links: [
                 {
                     title: 'Other Apps',
@@ -82,16 +82,16 @@ module.exports = {
                     ],
                 },
                 {
-                    title: 'Consultancy',
+                    title: 'Denkplan',
                     items: [
                         {
-                            label: "Realigned Services",
-                            to: 'https://realigned.ch',
+                            label: "Denkplan Philosophy",
+                            to: 'https://denkplan.com/philosophie/?lang=en',
                             target: '_blank'
                         },
                         {
-                            label: 'Realigned Learning',
-                            href: 'https://realigned.work',
+                            label: 'About Denkplan',
+                            href: 'https://denkplan.com/verein/?lang=en',
                             target: '_blank'
                         },
                     ],
@@ -99,7 +99,7 @@ module.exports = {
             ],
             logo: {
                 alt: 'Realigned Logo',
-                src: '/img/RealignedLogo.svg',
+                src: '/img/RealignedBlue.svg',
             },
             copyright: `Copyright © ${new Date().getFullYear()} Realigned Technologies Ltd. `,
         },

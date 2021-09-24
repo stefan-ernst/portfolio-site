@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #778a9f;
+  --ifm-color-primary: #ffffff;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -16,11 +16,11 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
   --ifm-navbar-height: 80px;
-  --ifm-font-color-base-inverse: #ffffff;
+  --ifm-font-color-base-inverse: #2b2b2b;
   --ifm-font-family-base: -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont;
   --ifm-background-color: #ffffff;
   --ifm-color-content: #2D3747;
-  --collapse-button-bg-color-dark: #fff;
+  --collapse-button-bg-color-dark: #6d6d6d;
   --realigned-blue: #1774C8;
   --realigned-bright-blue: #4baaff;
   --realigned-sky-blue: #63caff;
@@ -30,11 +30,13 @@
   --ifm-container-width: 1280px;
   --ifm-background-surface-color: #004c8a;
   --ifm-link-color: #013373;
+  --denkplan-red: #dd3333;
+  --ifm-menu-color-active: #dd3333;
 }
 
 main {
   padding: 0 0 0 0;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 .main-wrapper {
   background-color: #f5f5f5;
@@ -42,7 +44,6 @@ main {
 
 .frontpage {
   padding: 4rem 0 4rem 0;
-
 }
 
 .blue {
@@ -95,7 +96,11 @@ h3 {
 }
 
 .navbar__brand:hover {
-  color: var(--realigned-sky-blue);
+  color: var(--denkplan-red);
+}
+
+.table-of-contents__link--active {
+  color: var(--denkplan-red);
 }
 
 .navbar__item {
@@ -104,15 +109,13 @@ h3 {
 }
 
 .navbar--dark {
-  /*
-  background-color: var(--realigned-royal-blue);
-  */
   font-weight: 400;
   background-color: #0472CB;
 }
 
 .footer {
-  padding-top: 6rem;
+  padding-top: 3rem;
+  border-top: 3px solid #dd3333;
 }
 
 .menu {
@@ -121,11 +124,11 @@ h3 {
 }
 
 .footer--dark {
-  /*background-color: var(--realigned-dark-blue);*/
-background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
+  background: #c9c9c9;
+  color: black;
 }
 .navbar__link:hover, .navbar__link--active {
-  color: var(--realigned-sky-blue);
+  color: var(--denkplan-red);
 }
 .footer__item {
   padding: 0.5rem 0 0.5rem 0;
@@ -133,10 +136,7 @@ background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.
 
 
 .hero--primary {
-  /*
-  background: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
-  */
-background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
+background: linear-gradient(258.91deg, #F5F4F4 6.62%, #F5F5F5 67.65%, #FFFFFF 122.44%);
 }
 
 .blanket {
@@ -178,29 +178,28 @@ background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.
 }
 
 .navbar-sidebar__items .menu__link {
-  color: #fff;
+  color: #ddd;
 }
 
 .footer__link-item:hover {
-  color: var(--realigned-sky-blue);
+  color: var(--denkplan-red);
   text-decoration: none;
 }
 
 .button.button--primary {
-  background-color: var(--realigned-blue);
+  background-color: #dd3333;
   border-width: 0;
   font-weight: 400;
+  color: white !important;
 }
 
 .button.button--secondary {
   background-color: inherit;
   border-width: 0;
   font-weight: 400;
+  color: var(--realigned-blue);
 }
 
-.button--lg {
-  color: white !important;
-}
 
 .footer__logo {
   max-width: 200px;
@@ -211,7 +210,7 @@ background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.
 }
 
 .button.button--primary:hover, .button.button--primary:active, .button--outline.button--active {
-  background-color: var(--realigned-bright-blue);
+  background-color: #f86767;
   color: white;
 }
 
@@ -232,10 +231,7 @@ background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.
   margin: auto;
   width: 100%;
   border-radius: 10px;
-  /*
-  background-image: linear-gradient( 154deg, rgb(1, 51, 115) 0%, rgb(20, 132, 188) 100%);
-  */
-background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
+  background: linear-gradient(258.91deg, #F5F4F4 6.62%, #F5F5F5 67.65%, #FFFFFF 122.44%);
   max-width: 1050px;
   justify-content: space-between;
 }
@@ -245,7 +241,6 @@ background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.
 }
 
 .heroBox-text {
-  color: white;
   padding: 2rem;
 }
 

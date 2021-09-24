@@ -4,9 +4,6 @@ title: Introduction
 slug: /
 ---
 
-Personas for Jira helps you in understanding your customers and their needs better. By combining
-your user research data with the user requirements in Jira, you can build products and services
-more holistically - use the app to develop persona profiles and communicate with stakeholders
-and the development team.
+A key tool of Denkplan is the haptic strategic portfolio board. To create a bridge from this haptic strategic portfolio board to its digital representation in Atlassian Jira, we have designed the Jira Denkplan PlugIn. This enables a digital representation of your thinking plan system that is very close to the haptic way of working. The plugin is easy to use and tailored to your needs when working with Denkplan or with your Lean Portfolio. It allows you to manage your portfolio lightweight and directly in Atlassian Jira.
 
-Learn more about persona focus design and how to use Personas for Jira app.
+
