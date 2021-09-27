@@ -102,6 +102,10 @@ h3 {
 .table-of-contents__link--active {
   color: var(--denkplan-red);
 }
+.table-of-contents__link:hover {
+  color: var(--denkplan-red);
+}
+
 
 .navbar__item {
   padding-top: 0.5rem;
