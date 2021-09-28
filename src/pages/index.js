@@ -21,7 +21,7 @@ function Home() {
             <header className={clsx('hero hero--primary', styles.heroBanner)} style={{ marginTop:-50,padding:'5rem 0 4rem 0'}}>
                 <div className="container" style={{paddingTop:'2rem'}}>
                     <h1 className="hero__title">Portfolio Map for Jira </h1>
-                    <img src="/img/denkplan2.png" style={{margin: "14 10",width:100}} alt="Denkplan Logo" />
+                    <img src="/img/denkplan2.png" style={{margin: "14 10",width:150}} alt="Denkplan Logo" />
                     <br /><br />
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
 
