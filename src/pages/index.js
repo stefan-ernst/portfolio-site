@@ -16,11 +16,16 @@ function Home() {
     return (
         <Layout
             title={`${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
+            description="Portfolio Map for Jira lets you manage your companies portfolio and align your business strategies.
+            Combine your strategic initiatives with real world data from Jira.">
             <header className={clsx('hero hero--primary', styles.heroBanner)} style={{ marginTop:-50,padding:'5rem 0 4rem 0'}}>
                 <div className="container" style={{paddingTop:'2rem'}}>
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+                    <img src="/img/denkplan2.png" alt="Denkplan Logo" />
+                    <br />
+
                     <img src="/img/PF1.png" style={{width: '40rem'}} alt="Portfolio Map for Jira Hero Image"/>
 
                     <br/>

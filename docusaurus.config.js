@@ -1,13 +1,13 @@
 module.exports = {
-    title: 'Portfolio Map for Jira',
-    tagline: 'Focus on your customers and their goals - combine UX personas with Jira Issues',
-    url: 'https://www.betterpersonas.app',
+    title: 'Portfolio Map by Denkplan',
+    tagline: 'Combine your strategic initiatives with real world data from Jira',
+    url: 'https://www.portfoliomapping.app',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/fav_32x32.png',
     organizationName: 'Realigned Technologies Ltd', // Usually your GitHub org/user name.
-    projectName: 'personas', // Usually your repo name.
+    projectName: 'portfolio-site', // Usually your repo name.
     themeConfig: {
         colorMode: {
             defaultMode: 'light',
@@ -15,7 +15,7 @@ module.exports = {
         },
         navbar: {
             style: 'primary',
-            title: 'Portfolio Map for Jira',
+            title: 'Portfolio Map by Denkplan',
             logo: {
                 alt: 'Portfolio Map for Jira Logo',
                 src: 'img/denkplan.png',
@@ -50,8 +50,8 @@ module.exports = {
                             to: 'https://journeymapping.app',
                         },
                         {
-                            label: 'Read Confirmations for Confluence',
-                            to: 'https://realigned.io/readconfirmations',
+                            label: 'Personas for Jira',
+                            to: 'https://betterpersonas.app',
                         },
                         {
                             label: 'Personal Dashboards for Confluence',
