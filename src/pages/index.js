@@ -20,12 +20,11 @@ function Home() {
             Combine your strategic initiatives with real world data from Jira.">
             <header className={clsx('hero hero--primary', styles.heroBanner)} style={{ marginTop:-50,padding:'5rem 0 4rem 0'}}>
                 <div className="container" style={{paddingTop:'2rem'}}>
-                    <h1 className="hero__title">{siteConfig.title}</h1>
+                    <h1 className="hero__title">Portfolio Map for Jira </h1>
+                    <img src="/img/denkplan2.png" style={{margin: "14 10",width:100}} alt="Denkplan Logo" />
+                    <br /><br />
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
 
-                    <img src="/img/denkplan2.png" style={{width:195}} alt="Denkplan Logo" />
-                    <br />
-                    <br />
 
                     <img src="/img/PF1.png" style={{width: '40rem'}} alt="Portfolio Map for Jira Hero Image"/>
 

@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Portfolio Map by Denkplan',
-    tagline: 'Combine your strategic initiatives with real world data from Jira',
+    tagline: 'Align your strategic initiatives with real world data',
     url: 'https://www.portfoliomapping.app',
     baseUrl: '/',
     onBrokenLinks: 'throw',
