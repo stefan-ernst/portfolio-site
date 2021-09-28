@@ -23,7 +23,7 @@ function Home() {
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
 
-                    <img src="/img/denkplan2.png" style={{width:200}} alt="Denkplan Logo" />
+                    <img src="/img/denkplan2.png" style={{width:195}} alt="Denkplan Logo" />
                     <br />
                     <br />
 
