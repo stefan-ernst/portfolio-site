@@ -23,7 +23,8 @@ function Home() {
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
 
-                    <img src="/img/denkplan2.png" alt="Denkplan Logo" />
+                    <img src="/img/denkplan2.png" style={{width:200}} alt="Denkplan Logo" />
+                    <br />
                     <br />
 
                     <img src="/img/PF1.png" style={{width: '40rem'}} alt="Portfolio Map for Jira Hero Image"/>
