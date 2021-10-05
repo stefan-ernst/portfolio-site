@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Portfolio Map by Denkplan',
+    title: 'Denkplan Portfolio Map for Jira',
     tagline: 'Align your strategic initiatives with real world data',
     url: 'https://www.portfoliomapping.app',
     baseUrl: '/',
@@ -15,7 +15,7 @@ module.exports = {
         },
         navbar: {
             style: 'primary',
-            title: 'Portfolio Map by Denkplan',
+            title: 'Denkplan Portfolio Map for Jira',
             logo: {
                 alt: 'Portfolio Map for Jira Logo',
                 src: 'img/denkplan.png',
