@@ -30,6 +30,7 @@
   --ifm-container-width: 1280px;
   --ifm-background-surface-color: #004c8a;
   --ifm-link-color: #013373;
+  --ifm-navbar-link-color: #013373;
   --denkplan-red: #dd3333;
   --ifm-menu-color-active: #dd3333;
 }
@@ -86,13 +87,18 @@ h3 {
 }
 
 .navbar__toggle {
-  color: white;
+  color: black;
 }
 
 .navbar__title {
   padding-left: 8px;
   font-size: 1.25rem;
   padding-right: 1rem;
+  color:rgb(72, 77, 91);
+}
+
+.navbar__link {
+  color:rgb(72, 77, 91);
 }
 
 .navbar__brand:hover {
@@ -178,13 +184,15 @@ background: linear-gradient(258.91deg, #F5F4F4 6.62%, #F5F5F5 67.65%, #FFFFFF 12
   /*
   background-color: var(--realigned-dark-blue);
   */
-background: linear-gradient(135deg, #0472CB 2.64%, #0AA1C2 102.55%, #1AB1BC 102.56%, #1AB1BB 102.57%, #6B30C4 102.58%, #2874BB 102.74%, #1C7ED9 102.74%);
+background: white;
 }
 
 .navbar-sidebar__items .menu__link {
-  color: #ddd;
+  color: #000;
 }
-
+.navbar-sidebar__items .navbar-sidebar__back {
+  color: #000;
+}
 .footer__link-item:hover {
   color: var(--denkplan-red);
   text-decoration: none;
