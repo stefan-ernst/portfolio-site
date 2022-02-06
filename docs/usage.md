@@ -3,7 +3,7 @@ id: usage
 title: Using the Portfolio Map
 ---
 import AddIssue from '../static/img/addIssue.png'
-
+import IssueSummary from './demos/IssueSummary.js'
 
 ### Basics
 

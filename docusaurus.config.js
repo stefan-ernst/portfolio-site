@@ -53,14 +53,6 @@ module.exports = {
                             label: 'Personas for Jira',
                             to: 'https://betterpersonas.app',
                         },
-                        {
-                            label: 'Personal Dashboards for Confluence',
-                            to: 'https://realigned.io/personaldashboards',
-                        },
-                        {
-                            label: 'Enhanced Sharing for Confluence',
-                            to: 'https://realigned.io/enhancedsharing',
-                        },
                     ],
                 },
                 {
