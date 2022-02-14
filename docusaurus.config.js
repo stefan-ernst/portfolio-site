@@ -9,7 +9,7 @@ module.exports = {
     organizationName: 'Realigned Technologies Ltd', // Usually your GitHub org/user name.
     projectName: 'portfolio-site', // Usually your repo name.
     themeConfig: {
-        image: "img/DenkplanOG.png",
+        image: "img/DenkplanOG2.png",
         colorMode: {
             defaultMode: 'light',
             disableSwitch: true
