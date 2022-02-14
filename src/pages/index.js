@@ -45,7 +45,7 @@ function Home() {
                                 'button button--outline button--secondary button--lg',
                                 styles.getStarted,
                             )}
-                            to={"https://marketplace.atlassian.com/1224357"}>
+                            to={"https://marketplace.atlassian.com/1226527"}>
                             Try free
                         </Link>
                     </div>
