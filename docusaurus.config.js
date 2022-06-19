@@ -43,7 +43,7 @@ module.exports = {
                     title: 'Other Apps',
                     items: [
                         {
-                            label: 'Story Mapping for Jira',
+                            label: 'Advanced Story Maps for Jira',
                             to: 'https://storymapping.app',
                         },
                         {
