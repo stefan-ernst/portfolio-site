@@ -10,18 +10,26 @@ Previously added goals stay in place, and can you can edit and use them just lik
 
 ### Activating the top-level row
 
-Select "Settings" via the application menu in the top left-hand corner. 
-A toggle switch is visible on the tab "Map Configuration" to activate the top-level row.
-Next to it is a visual representation of how the top-level elements will be positioned in the story map.
+In the top right-hand corner, you will find the hierarchy button. Clicking it will open the drawer to configure the top-level row and change the second-level hierarchy issue and link types.
 
-![Top Level Elements Preview](/img/Layout1.svg)
+<img src="/img/docs/Hierarchy.png" style={{width:"515px"}} alt="Hierarchy Configuration" />
 
-Please select an issue type to be used for the top-level row. You can do this later; however, adding elements will not be possible until the issue type is set.
-Optionally, you can set a link type to connect the top-level elements to the lower-level elements. Please note that the portfolio mapping app does not load elements already associated with this issue link type. We are planning to add this functionality in a future release.
+Select an issue type for the top-level row - the link type is required for dynamic maps and optional for static maps.
+The app does not load elements already associated with this issue link type on a static map.
+
+On a dynamic map, changing the link type will reload the map that is currently displayed with the new configuration.
 
 ### Using the new top-level elements
-After configuring the top-level row as described above, you can add and activity via the create button in the top right-hand corner of the story map.
 
-![Create Button](/img/CreateButton.svg)
+After configuring the top-level row as described above, you can add issues via the add button in the top right-hand corner of the portfolio map.
 
-After creation, you can drag elements from the backbone row to under the new top-level element. The portfolio mapping app will do the rest: associate the column with the top-level element and maintain the issue link between them.
+![Add Button](/img/docs/AddButton.svg)
+
+Create the issue by typing in the issue summary and hitting enter. You can now drag this issue to the top left-hand corner, where the new top-level element will appear.
+
+<img src="/img/docs/AddFeature.png" style={{width:"380px"}} alt="Adding an issue" />
+
+
+After creation, you can drag elements from the action fields row to under the new top-level issue. The app will do the rest: associate the column with the top-level element and maintain the issue link between them.
+
+![Portfolio Map Visualization](/img/docs/Vis1.svg)
