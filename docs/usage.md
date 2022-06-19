@@ -3,8 +3,6 @@ id: usage
 title: Using the Portfolio Map
 ---
 
-import Setup1 from '/static/img/setup1.png'
-
 ### Basics
 
 A portfolio map consists of 3 layers, the top level elements, the action fields, and the initiatives (or other issue types). 
