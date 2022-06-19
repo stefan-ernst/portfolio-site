@@ -2,59 +2,73 @@
 id: usage
 title: Using the Portfolio Map
 ---
-import AddIssue from '../static/img/addIssue.png'
-import IssueSummary from './demos/IssueSummary.js'
+
+import Setup1 from '/static/img/setup1.png'
 
 ### Basics
 
+A portfolio map consists of 3 layers, the top level elements, the action fields, and the initiatives (or other issue types). 
+
+In this document, we will refer to the layers in the following way.
+
+![Story Map Visualization](/img/docs/Vis2.svg)
+
+The top level element layer is optional; see [working with top-level elements](/docs/top-level-elements) for details.
+
 You can add multiple portfolio maps for a Jira project. 
-This way you can control multiple company wide portfolio maps from a single Jira project.
+This way you can control multiple company-wide portfolio maps from a single Jira project.
 
-After opening the app, click "Add Portfolio Map" to create a new portfolio.
+Go to your project and select "Portfolio Maps" from the left-hand menu. You will see an empty overview screen.
 
-You will be prompted to give the portfolio map a name. Be aware, that at this time, portfolios can not be renamed.
+You can create a new portfolio map by clicking the button in the top right-hand corner.
 
- Additionally, you need to 
-choose the column issue type (the activity row in a classic story map - we will refer to this issue type as "action field" in this article)  from the list
-of available issue types in the current project. 
-You can also select a Jira Agile board.
-This board provides a backlog for the portfolio, where you can later drag and drop
-issues from into the map. 
+You can select between a dynamic and a static map. Read more about the [differences between these two map types here](/docs/map-types).
+In most cases, we now recommend going with dynamic maps.
 
-:::info
-Ideally, if you have a portfolio Kanban board, choose it as your backlog, as all available releases will also be fetched from this board.
-:::
+After choosing the dynamic map type, you can select your Jira agile board, and you are good to go. If you choose a static map, the welcome assistant will open - where you can specify a name for the portfolio map.
 
-You can import all issues of the chosen issue type either from the project - or, if you
-selected an agile board, from the board itself.
- 
-#### Adding an issue
+#### Static Maps
 
-You can add issues three ways: Either by clicking "Create" or "Search" within a column
-or by clicking the backlog symbol into the top right hand corner and dragging them from the backlog into the portfolio map.
+You can then define which issue you want to use for the action fields of the map. If you leave this field empty, the map will either (a) pick the standard epic issue type or (b) ask again when opening the map if the standard epic type is not available in your project.
+Lastly, you can select an agile board to use as a backlog. This step is **optional**. You can either pick a board later or add the issues manually to the story map if you do not want to use Jira Software features or only have a Jira Core license.
 
-<img src={AddIssue} />
+#### Importing Issues
 
-By adding an issue into a column, a property will be set on the issue 
-that references the current portfolio map as well as which issue it is assigned to.
+The welcome assistant for static maps automatically lets you import issues with the selected issue type from the current project or - if you have chosen one - from the agile board.
+For example, the app will import existing epics and all issues within those epics into the portfolio map. 
 
+### Organizing issues
 
-### Working with action fields
+Using drag and drop, action fields can be rearranged from left to right or from right to left. You can reorder them horizontally without changing the connected issues.
+Items in the connected issues layer can also be reordered or associated with another action field via drag and drop anywhere on the map.
 
-You can add additional action fields to the portfolio map at any point. The issues can be marked
-with custom colors. These colors do not correspond to the epic colors of Jira (the selection
- is too limited), so you can select any color you want here.
+Dragging issues between the different layers is not supported - you can not add an issue from the connected layer to the action field layer - please use distinct issue types for clarity.
 
-![Picking an issue color](/img/smfree/smetutorial4.png)
+You can add colors to each action field to visually separate them. If you want to, you can also go to Settings -> Display and enable all issues in the column to inherit this color, helping to separate them visually.
 
-Once you have the second column set up, you can start moving issues between columns. Simply drag
-and drop them from one column to the next.
+### Assigning issues to releases
 
-![Issue moved between action fields](/img/smfree/smetutorial5.png)
+If you want to plan iterations or releases, you can select the "Swimlanes" dropdown in the top left-hand corner.
 
-### Inline Editing
+When switching the portfolio map to either of these modes, you will see existing releases from the underlying agile board.
 
-You can adjust the issue summary or the epic title at any time by clicking the edit icon
-or by double clicking on the card.
+When dragging an issue from either the unassigned swimlane or anotherrelease swimlane, the app will associate the issue in the background with this release.
+The change happens instantly in the UI, so you can quickly rearrange many issues at once.
 
-![Editing the summary](/img/smfree/smetutorial6.png)
+### Custom swimlanes
+
+Sometimes, managing portfolio maps releases is not enough. Custom swimlanes help you plan more long-term or deal with "fuzziness" - for example if you don't exactly know when a change can occur.
+
+Custom swimlanes work with free form text, so you call them "Iteration 1" or "Iteration 2".
+Or you could use "Near term" or "Medium-term" and create a more rough outline of your portfolio roadmap.
+
+### Custom field swimlanes
+
+For organizations that organize their Jira-wide releases in custom fields - you can select the swimlanes to display values of single-select custom fields via the settings. Go to Settings -> Swimlanes and add the desired custom field. 
+You can then assign issues to these values via the respective swimlane view.
+
+### Filters / Quick Filters
+
+If you have an agile board associated with the portfolio map, you can find all quick filters from this board when clicking the filter symbol next to the swimlane drop down in the top right-hand corner. You can activate these filters by clicking them.
+You can also add custom filters by using the filter manager, which you can open when clicking the "Manage Filters" button.
+Filtering will limit the issues that will be visible but will not affect the action field row. 
